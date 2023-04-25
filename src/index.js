@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import Counter from './Counter';
+// import Todo from './Todo list/Todo';
+// import randomColor from'./Todo list/1randomColor';
+import Search_movies from './Search_movies/Search_movies';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+  {/* <Counter />  */}
+  {/* <Todo /> */}
+  {/* <randomColor/> */}
+  <Search_movies/>
+  </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
