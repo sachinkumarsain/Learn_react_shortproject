@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 // import Todo from './Todo list/Todo';
 // import randomColor from'./Todo list/1randomColor';
 import Search_movies from './Search_movies/Search_movies';
+import Home from "./Netflix_copy/Home";
+import Home_page from './Netflix/Home_page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +13,8 @@ root.render(
   {/* <Counter />  */}
   {/* <Todo /> */}
   {/* <randomColor/> */}
-  <Search_movies/>
+  {/* <Search_movies/> */}
+  <Home/>
+  {/* <Home_page/> */}
   </>
 );
