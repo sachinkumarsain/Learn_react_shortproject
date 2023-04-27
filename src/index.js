@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 // import Counter from './Counter';
 // import Todo from './Todo list/Todo';
 // import randomColor from'./Todo list/1randomColor';
-import Search_movies from './Search_movies/Search_movies';
-import Home from "./Netflix_copy/Home";
-import Home_page from './Netflix/Home_page';
+// import Search_movies from './Search_movies/Search_movies';
+// import Home from "./Netflix_copy/Home";
+// import Home_page from './Netflix/Home_page';
+import Home from './Tesla/Home'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,8 @@ root.render(
   {/* <Todo /> */}
   {/* <randomColor/> */}
   {/* <Search_movies/> */}
-  <Home/>
+  {/* <Home/> */}
   {/* <Home_page/> */}
+  <Home/>
   </>
 );
