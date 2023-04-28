@@ -17,11 +17,16 @@ header,ul{
 ul{
     justify-content: center;
     list-style: none;
-    font-size: 20px;
-    font-weight: 400;
+ 
 }
 ul li{
     margin: 0px 10px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
 }
 .model_X,.model_Y,.model_S,.model_3,.solar,.SolarPanels,.SolarRoof,.Accessories{
     height: 100vh;
@@ -61,7 +66,8 @@ ul li{
 }
 .spaical h4{
     font-size: 18px;
-    font-weight: 250;
+    font-weight: 150;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .anchors{
     margin-top:400px ;
@@ -89,4 +95,17 @@ ul li{
 .learn:hover{
     background-color: rgb(189, 181, 181);
     color: black;
+}
+.icon{
+    margin-top: 20px;
+    
+}
+.icon a svg{
+    color: rgb(78, 78, 78);
+    font-size: 3.5rem;
+    transition: all 1s ease;
+  
+}
+.icon a svg:hover{
+    transform: translateY(20px);
 }
