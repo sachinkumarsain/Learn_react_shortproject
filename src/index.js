@@ -6,7 +6,8 @@ import ReactDOM from 'react-dom/client';
 // import Search_movies from './Search_movies/Search_movies';
 // import Home from "./Netflix_copy/Home";
 // import Home_page from './Netflix/Home_page';
-import Home from './Tesla/Home'
+// import Home from './Routing/Home'
+import Home from './Routing/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
   {/* <Search_movies/> */}
   {/* <Home/> */}
   {/* <Home_page/> */}
+  {/* <Home/> */}
   <Home/>
   </>
 );
