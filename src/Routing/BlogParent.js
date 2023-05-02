@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-function BlogPerent() {
+function BlogParent() {
   return (
    <>
    <h1>BlogPerent</h1>
@@ -10,4 +10,4 @@ function BlogPerent() {
   )
 }
 
-export default BlogPerent
+export default BlogParent

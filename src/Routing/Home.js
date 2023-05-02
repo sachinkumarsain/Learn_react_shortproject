@@ -7,7 +7,7 @@ import Blog from "./Blog"
 import Contact from './Contact'
 import SingleBlog from "./SingleBlog"
 import NotFound from "./NotFound"
-import BlogPerent from "./BlogPerent"
+import BlogParent from "./BlogParent"
 function Home() {
   return (
     <>
@@ -17,7 +17,7 @@ function Home() {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/about' element={<About />} />
-          <Route path='/blog' element={<BlogPerent />} >
+          <Route path='/blog' element={<BlogParent />} >
             <Route index element={<Blog/>}/>
             <Route path=':id' element={<SingleBlog />} />
           </Route>
