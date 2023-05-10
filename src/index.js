@@ -10,7 +10,8 @@ import ReactDOM from 'react-dom/client';
 // import Home from './Routing/Home';
 // import Product from "./Product" 
 // import First from './Weather/First';
-  import Reduser from './ReduserCount/Reduser';
+  import ReduserCount from './ReduserCount/ReduserCount';
+import ReduserAge from './ReduserAge/ReduserAge';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
   {/* <Product/> */}
   {/* <First/> */}
   {/* <Home/> */}
-  <Reduser/>
+  {/* <ReduserCount/> */}
+  <ReduserAge/>
   </>
 );
