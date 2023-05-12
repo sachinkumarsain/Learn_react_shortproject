@@ -4,7 +4,7 @@ const starting=20;
 const reduser=(state,action)=>{
     switch(action){
         case"inc":
-        return state+1
+        return state+1 
         case"dec":
         return state-1
         default:
