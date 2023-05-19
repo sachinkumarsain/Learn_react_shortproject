@@ -12,6 +12,7 @@ import ReactDOM from 'react-dom/client';
 // import First from './Weather/First';
   import ReduserCount from './ReduserCount/ReduserCount';
 import ReduserAge from './ReduserAge/ReduserAge';
+import First from './LogInFrom/First';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
   {/* <First/> */}
   {/* <Home/> */}
   {/* <ReduserCount/> */}
-  <ReduserAge/>
+  {/* <ReduserAge/> */}
+  <First/>
   </>
 );
