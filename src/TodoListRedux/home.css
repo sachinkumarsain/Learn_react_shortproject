@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -21,39 +22,82 @@ body {
 
     flex-direction: column;
 }
-.container form input{
+
+.container form input {
     padding: 4px 10px;
     font-size: 20px;
     border: none;
-    outline: none;
-    margin-right:10px ;
+    margin-right: 20px;
     border-radius: 3px;
 
 }
-.container form button{
+
+.container form button {
     padding: 4px 10px;
     font-size: 20px;
-    outline: none;
+    z-index: 1;
+    position: relative;
     border: none;
+    overflow: hidden;
     border-radius: 0px 15px 0px 15px;
 }
-.container ol {
-    margin-top: 50px;  
+.container form button:hover{
+    color: white;
 }
+
+.container form button::before {
+    content: "";
+    width: 100%;
+    height: 300%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    top: -80px;
+    transition: all 1s ease;
+    right:-80px ;
+    background: #603813;
+    background: -webkit-linear-gradient(to left, #b29f94, #603813);
+    background: linear-gradient(to left, #b29f94, #603813);
+
+}
+.container form button:hover::before{
+    transform: scale(3);
+    color: white;
+}
+
+
+.container ol {
+    border-radius: 0px 20px 0px 20px;
+    margin-top: 50px;
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 .container ol li {
     display: flex;
     font-size: 30px;
+    padding: 4px 15px;
     align-items: center;
     justify-content: center;
+
 }
-.container ol li a:nth-of-type(1){
-    color: #f3f64d;
+
+.container ol li a:nth-of-type(1) {
+    color: #113305;
+
     margin-left: 15px;
 }
-.container ol li a:nth-of-type(2){
-    color: #10f1e5;
+
+.container ol li a:nth-of-type(2) {
+    color: #040637;
 }
-.container ol li a:nth-of-type(3){
+
+.container ol li a:nth-of-type(3) {
     color: #ef1515;
 }
 

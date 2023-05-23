@@ -34,7 +34,7 @@ function Home() {
   return (
     <>
     <div className='container'>
-      <form  onSubmit={handleSubmit} autoFocus             >
+      <form  autoFocus onSubmit={handleSubmit} autoFocus             >
         <input autoFocus type='text' placeholder='enter name' value={intial.input} onChange={(e) => dispatch(setInput(e.target.value))} >
         </input>
         <button type='submit'>add task</button>
