@@ -9,7 +9,7 @@ const reduser=(state,action)=>{
     return state-1
     default:
       return state
-  }
+  }     
 }
 
 function Reduser() {

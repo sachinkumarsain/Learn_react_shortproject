@@ -28,7 +28,7 @@ function Todo() {
   }
   function deleteIcon(element, index) {
     element.preventDefault()
-    liValue.filter((task, id) => {
+    liValue.filter((task  , id) => {
       return id !== index
     })
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Counter from './Counter/Counter';
-// import Todo from './Todo list/Todo';
+import Todo from './Todo list/Todo';
 // import randomColor from'./Todo list/1randomColor';
 // import Search_movies from './Search_movies/Search_movies';
 // import Home from "./Netflix_copy/Home";
@@ -14,8 +14,8 @@ import ReduserCount from './ReduserCount/ReduserCount';
 import ReduserAge from './ReduserAge/ReduserAge';
 import First from './LogInFrom/First';
 import { Provider } from 'react-redux';
-import Home from './CounterRedux/Home';
-import Store from './CounterRedux/Store';
+import Home from './TodoListRedux/Home';
+import Store from './TodoListRedux/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
