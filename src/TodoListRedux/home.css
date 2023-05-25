@@ -21,6 +21,10 @@ body {
     justify-content: center;
 
     flex-direction: column;
+    animation:  borderAnimate 2s linear 0.5s infinite;
+}
+@keyframes borderAnimate {
+    
 }
 
 .container form input {
@@ -41,7 +45,8 @@ body {
     overflow: hidden;
     border-radius: 0px 15px 0px 15px;
 }
-.container form button:hover{
+
+.container form button:hover {
     color: white;
 }
 
@@ -54,31 +59,61 @@ body {
     z-index: -2;
     top: -80px;
     transition: all 1s ease;
-    right:-80px ;
+    right: -80px;
     background: #603813;
     background: -webkit-linear-gradient(to left, #b29f94, #603813);
     background: linear-gradient(to left, #b29f94, #603813);
 
 }
-.container form button:hover::before{
+
+.container form button:hover::before {
     transform: scale(3);
     color: white;
 }
 
 
-.container ol {
+.container ul {
     border-radius: 0px 20px 0px 20px;
     margin-top: 50px;
-    background: #ADA996;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* Chrome 10-25, Safari 5.1-6 */
+    animation: animate 2s linear 0.5s infinite;
     background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-.container ol li {
+@keyframes animate {
+    0% {
+        background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    }
+
+    20% {
+
+        background: linear-gradient(to right, #918ea7, #b8b87e);
+    }
+
+    40% {
+
+        background: linear-gradient(to right, #e7c4c4, #b4d0b4);
+    }
+
+    60% {
+
+        background: linear-gradient(to right, #cbe39f, #f1aeae);
+    }
+
+    80% {
+
+        background: linear-gradient(to right, #f2b8b8, #e7d3bf);
+
+    }
+
+    100% {
+
+        background: linear-gradient(to right, #FFFFFF, #eecc5c);
+
+    }
+}
+
+.container ul li {
     display: flex;
     font-size: 30px;
     padding: 4px 15px;
@@ -87,17 +122,16 @@ body {
 
 }
 
-.container ol li a:nth-of-type(1) {
+.container ul li a:nth-of-type(1) {
     color: #113305;
-
     margin-left: 15px;
 }
 
-.container ol li a:nth-of-type(2) {
+.container ul li a:nth-of-type(2) {
     color: #040637;
 }
 
-.container ol li a:nth-of-type(3) {
+.container ul li a:nth-of-type(3) {
     color: #ef1515;
 }
 

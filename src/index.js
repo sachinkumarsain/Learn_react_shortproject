@@ -14,8 +14,8 @@ import ReduserCount from './ReduserCount/ReduserCount';
 import ReduserAge from './ReduserAge/ReduserAge';
 import First from './LogInFrom/First';
 import { Provider } from 'react-redux';
-import Home from './TodoListRedux/Home';
-import Store from './TodoListRedux/Store';
+import Home from './RandomUserId/Home';
+import Store from './RandomUserId/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

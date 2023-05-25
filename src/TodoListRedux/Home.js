@@ -34,12 +34,12 @@ function Home() {
   return (
     <>
     <div className='container'>
-      <form  autoFocus onSubmit={handleSubmit} autoFocus             >
+      <form  autoFocus     onSubmit={handleSubmit}>
         <input autoFocus type='text' placeholder='enter name' value={intial.input} onChange={(e) => dispatch(setInput(e.target.value))} >
         </input>
         <button type='submit'>add task</button>
       </form>
-      <ol>
+      <ul>
         {
           intial.tasks.map((task,index)=>{
             return(
@@ -51,7 +51,7 @@ function Home() {
             )
           })
         }
-      </ol>
+      </ul>
       </div>
     </>
   )
