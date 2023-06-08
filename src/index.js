@@ -17,7 +17,8 @@ import ReactDOM from 'react-dom/client';
 // import { Provider } from 'react-redux';
 // import Home from './RandomUserId/Home';
 // import Store from './RandomUserId/Store';
-import BomChange from './BomChange';
+// import BomChange from './BomChange';
+import TouchTyping from './Touch-Typing_Project/TouchTyping';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -38,6 +39,6 @@ root.render(
     {/* <Provider store={Store}>
       <Home />
     </Provider> */}
-    <BomChange/>
+   <TouchTyping/>
   </>
 );
