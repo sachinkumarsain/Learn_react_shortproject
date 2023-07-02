@@ -19,6 +19,7 @@ import ReactDOM from 'react-dom/client';
 // import Store from './RandomUserId/Store';
 // import BomChange from './BomChange';
 import TouchTyping from './Touch-Typing_Project/TouchTyping';
+import PlayerScore from './IPL Player Score/PlayerScore';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -39,6 +40,7 @@ root.render(
     {/* <Provider store={Store}>
       <Home />
     </Provider> */}
-   <TouchTyping/>
+   {/* <TouchTyping/> */}
+   <PlayerScore/>
   </>
 );
