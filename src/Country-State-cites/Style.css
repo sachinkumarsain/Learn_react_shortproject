@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* background: linear-gradient(to right, #ffffff, #abbaab); */
+}
+
+.wapper h1 {
+    font-size: 60px;
+    /* margin-bottom: 40px; */
+}
+
+.wapper h1 .first {
+    color: rgb(54, 123, 157);
+}
+
+.wapper h1 .second {
+    color: rgb(15, 154, 159);
+}
+
+.total {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 200px;
+
+
+}
+.total select {
+    margin: 0px 6px;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 5px 20px;
+
+}
