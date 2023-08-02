@@ -18,9 +18,10 @@ import ReactDOM from 'react-dom/client';
 // import Home from './RandomUserId/Home';
 // import Store from './RandomUserId/Store';
 // import BomChange from './BomChange'
-import CountryCity from "./CountryCities/CountryCities"
+// import CountryCity from "./CountryCities/CountryCities"
 // import TouchTyping from './Touch-Typing_Project/TouchTyping';
 // import PlayerScore from './IPL Player Score/PlayerScore';
+import CountryStateCities from './Country-State-cites/CountryStateCities';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -43,6 +44,7 @@ root.render(
     </Provider> */}
    {/* <TouchTyping/> */}
    {/* <PlayerScore/> */}
-   <CountryCity/>
+   {/* <CountryCity/> */}
+   <CountryStateCities/>
   </>
 );
