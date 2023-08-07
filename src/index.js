@@ -21,7 +21,8 @@ import ReactDOM from 'react-dom/client';
 // import CountryCity from "./CountryCities/CountryCities"
 // import TouchTyping from './Touch-Typing_Project/TouchTyping';
 // import PlayerScore from './IPL Player Score/PlayerScore';
-import CountryStateCities from './Country-State-cites/CountryStateCities';
+import TypeCode from './TypeCode/TypeCode';
+// import CountryStateCities from './Country-State-cites/CountryStateCities';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -45,6 +46,7 @@ root.render(
    {/* <TouchTyping/> */}
    {/* <PlayerScore/> */}
    {/* <CountryCity/> */}
-   <CountryStateCities/>
+   {/* <CountryStateCities/> */}
+   <TypeCode/>
   </>
 );
