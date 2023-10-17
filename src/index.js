@@ -21,8 +21,10 @@ import ReactDOM from 'react-dom/client';
 // import CountryCity from "./CountryCities/CountryCities"
 // import TouchTyping from './Touch-Typing_Project/TouchTyping';
 // import PlayerScore from './IPL Player Score/PlayerScore';
-import TypeCode from './TypeCode/TypeCode';
+// import TypeCode from './TypeCode/TypeCode';
 // import CountryStateCities from './Country-State-cites/CountryStateCities';
+// import UseRef from './useRef-Uses/UseRef';
+import Index from './CheckBoxWork/Index';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -47,6 +49,8 @@ root.render(
    {/* <PlayerScore/> */}
    {/* <CountryCity/> */}
    {/* <CountryStateCities/> */}
-   <TypeCode/>
+   {/* <TypeCode/> */}
+   {/* <UseRef/> */}
+   <Index/>
   </>
 );
