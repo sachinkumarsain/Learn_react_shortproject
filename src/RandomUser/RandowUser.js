@@ -1,35 +1,34 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-function RandowUser() {
+function RandomUser() {
+  const [userData, setUserData] = useState({});
 
-    const[userData , setUserData] = useState({})
-    const[random , setRandom] = useState(false)
+  function randomUser () {
+    axios.get('https://randomuser.me/api/')
+      .then((response) => {
+        setUserData(response.data.results[0]);
+      })
 
-    useEffect(()=>{
-        axios.get("https://randomuser.me/api/")
-        .then((result)=>{
-            setUserData({...result.data.results[0]})
-            setRandom(false)
-        })
-    },[random])
+  };
 
-    function handleRandom(){
-        setRandom(true)
-    }
-    console.log(userData)
+  useEffect(() => {
+    randomUser();  
+  }, []);
+
+  function handleRandom() {
+    randomUser();
+  }
 
   return (
-    <>
-    <div className='wapper'>
-         <div className='box'>
-            <img src={userData.picture.large} ></img>
-            <h2>{`${userData.name.title} ${userData.name.first} ${userData.name.last}`}</h2>
-            <button onClick={handleRandom}>Random User</button>
-         </div>
+    <div className='wrapper'>
+      <div className='box'>
+        <img src={userData.picture?.large}  />
+        <h2>{`${userData.name?.title} ${userData.name?.first} ${userData.name?.last}`}</h2>
+        <button onClick={handleRandom}>Random User</button>
+      </div>
     </div>
-    </>
-  )
+  );
 }
 
-export default RandowUser
+export default RandomUser;
