@@ -24,7 +24,8 @@ import ReactDOM from 'react-dom/client';
 // import TypeCode from './TypeCode/TypeCode';
 // import CountryStateCities from './Country-State-cites/CountryStateCities';
 // import UseRef from './useRef-Uses/UseRef';
-import Index from './CheckBoxWork/Index';
+// import Index from './CheckBoxWork/Index';
+import RandowUser from './RandomUser/RandowUser';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -51,6 +52,7 @@ root.render(
    {/* <CountryStateCities/> */}
    {/* <TypeCode/> */}
    {/* <UseRef/> */}
-   <Index/>
+   {/* <Index/> */}
+   <RandowUser/>
   </>
 );

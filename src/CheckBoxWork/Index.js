@@ -13,7 +13,7 @@ function Index() {
     const [oneTank, setOneTank] = useState([])
     const [leftToList, setLeftToList] = useState([])
     const [ secondTank , setSecondTank] = useState([])
-    const [ listId , setlistId ]= useState("")
+    const [ listId , setlistId ]= useState([])
 
 
     //..............................functions................//
@@ -21,9 +21,9 @@ function Index() {
     function handleOne(e) {
         if (e.target.checked === true) {
             
-            // setlistId([...listId ,e.target.id])
+            setlistId([...listId ,e.target.id])
 
-            setlistId(e.target.id)
+           
 
             setOneTank([...oneTank, {
                 id: e.target.id,
@@ -63,8 +63,11 @@ function Index() {
 
 
     function leftToRight() {
-        setTank(tank.filter((list)=>{
-            return list.id !==listId
+        console.log(tank, listId)
+        console.log( tank.filter((list)=>{
+            return listId.map((id)=>{
+                return list.id!==id
+            })
         }))
         setLeftToList([...oneTank])
 
@@ -83,8 +86,8 @@ function Index() {
 
                     <ul style={{listStyle:"none"}}>
                         {
-                            tank.map((list)=>{
-                                return <li>
+                            tank.map((list, index)=>{
+                                return <li key={index}>
                                     <input type='checkbox' value={list.value} id={list.id} onChange={handleOne}/>{list.value}
                                 </li>
                             })
@@ -101,7 +104,7 @@ function Index() {
                     <ul style={{listStyle:"none"}}>
                         {
                             leftToList.map((list , index) => {
-                                return <li>
+                                return <li key={index}>
                                     <input  id={list.id} type='checkbox' value={list.value} onChange={hanldeSecond} />{list.value}
                                 </li>
                             })
